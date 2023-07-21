@@ -1,0 +1,137 @@
+/* Define Inter font using @font-face */
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/inter.woff2') format('woff2'), /* Modern browsers */
+  }
+  
+  /* Apply the Inter font to the body */
+
+  
+body{
+    margin: 0;
+    background-color: #EFF2F1;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 20vw 60vw;
+    justify-content: space-between;
+    background-color: #3B5D50 ;
+    margin:0px;
+    padding: 3vh 5vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+    
+}
+
+.nav-buttons{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    width: 100%;
+    justify-content:start;
+    align-items: center;
+    gap:1%;
+   
+   
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-color: #3B5D50;
+    margin: 0;
+    padding:0;
+    max-width: 100vw;
+    top:0;
+    left:0;
+    display: grid;
+    grid-template-columns: 30% 50% ;
+    align-items: center;
+    justify-content: start;
+    gap: 10%;
+}
+
+.demo{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: start;
+    gap:5%;
+    max-width: 100vw;
+    height: auto;
+    margin: 5% 10%;
+}
+
+.singlecol{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    width:100%
+}
+
+.singlerow{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: start;
+    justify-content: start;
+    gap:5%
+}
+.blog-posts{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
+}
+
+.footer{
+    background-color: white;
+}
+
+h3{
+    color: white;
+    font-size: 32px;
+    text-align: start;
+    padding-left: 20%;
+    margin: 0;
+}
+
+h1{
+    color:white;
+    font-size: 54px;
+}
+
+.nav-bots {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0px;
+    margin: 10px;
+    
+    /* Adjust this value to make the underline lower */
+}
+
+.nav-bots.active{
+
+    text-decoration-line: underline;
+    text-decoration-color: yellow;
+    text-decoration-skip: 2px;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 15px;
+    
+}
+
+.roundedButton{
+   
+        border: none;
+        background-color: yellow; /* Blue background color */
+        color: white; /* Text color */
+        padding: 10px 20px; /* Add padding to the button */
+        font-size: 16px; /* Set font size */
+        cursor: pointer; /* Change cursor to a hand pointer on hover */
+        border-radius: 25px;
+        border: 2px solid white;
+        font-family: 'Inter', sans-serif;
+        
+    
+}
+
